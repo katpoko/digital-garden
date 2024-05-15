@@ -1,5 +1,7 @@
 ---
 const siteName = "kat's secret garden";
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
 ---
 
 <html lang="en">
@@ -14,12 +16,8 @@ const siteName = "kat's secret garden";
 
     <h1>{siteName}</h1>
    
-    <nav>
-      <a href="/">Home</a>
-      <a href="/portfolio/">Portfolio</a>
-      <a href="/about/">About</a>
-    </nav>
-
+ <!-- Dynamically Insert Navigation --> 
+ <Navigation />
     <p>Welcome to {siteName}</p>
   </body>
 </html>
